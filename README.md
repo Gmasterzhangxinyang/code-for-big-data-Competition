@@ -1,8 +1,8 @@
 # GCN for traffic flow prediction based on PEMS04/08
 
-**数据准备**
+**Dataloader**
 
-将数据集 PEMS04/08如下
+Dictionary setting of dataset
 
 ```markdown
 - /GCN
@@ -15,7 +15,7 @@
        
 ```
 
-**GCN模型代码**
+**GCN model core code**
 
 ```python
 class GCN(nn.Module):
@@ -62,9 +62,10 @@ class GCN(nn.Module):
         degree_matrix = torch.diag(degree_matrix)  # [N, N]
 
         return torch.mm(degree_matrix, graph_data)  # D^(-1) * A = \hat(A)
-
-# LSTM for trajectory prediction
-
-Convert the txt files in the dataset to csv files and create a folder named dataset to be placed in the same level directory as lstm.py
 ```
+
+
+# GCN for traffic flow prediction based on PEMS04/08
+Convert the txt files in the dataset to csv files and create a folder named dataset to be placed in the same level directory as lstm.py
+
 
