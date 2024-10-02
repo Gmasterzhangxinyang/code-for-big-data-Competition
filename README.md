@@ -62,5 +62,9 @@ class GCN(nn.Module):
         degree_matrix = torch.diag(degree_matrix)  # [N, N]
 
         return torch.mm(degree_matrix, graph_data)  # D^(-1) * A = \hat(A)
+
+# LSTM for trajectory prediction
+
+Convert the txt files in the dataset to csv files and create a folder named dataset to be placed in the same level directory as lstm.py
 ```
 
