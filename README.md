@@ -65,10 +65,10 @@ class GCN(nn.Module):
 ```
 
 
-#LSTM
+# LSTM
 Convert the txt files in the dataset to csv files and create a folder named dataset to be placed in the same level directory as lstm.py
 
-#Optimal Path planning
+# Optimal Path planning
 Put the dictionary address into the code and run directly
 
 
